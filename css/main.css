@@ -1,0 +1,381 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* color de fondo*/
+body{
+    background-color:#F9F2ED;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+header h1 {
+    margin-bottom: 1rem;
+    font-family: 'Taviraj', serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+header nav ul {
+    display: flex;
+    column-gap: 40px;
+    list-style: none;
+    padding: 10px;
+    font-family: 'Taviraj', serif;
+    font-weight: 300;
+}
+
+
+
+/*subtitulo y parrafos index*/
+
+main{
+    gap: 8px;
+    height:600px;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"subtitulo subtitulo"
+                        "parrafo-uno amburguesa-uno"
+                        "amburguesa-dos parrafo-dos";                             
+    font-family: 'Taviraj', serif;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 100px;
+    
+      
+}
+
+.subtitulo{
+    grid-area: subtitulo;
+    font-size: 30px;
+
+}
+
+.parrafo-uno{
+    grid-area: parrafo-uno;
+    font-style: italic;
+    padding: 20px;
+   
+    
+
+}
+
+.parrafo-dos{
+    grid-area: parrafo-dos;
+    font-style: italic;
+    padding-right: 90px;
+}
+
+.amburguesa-uno{
+    grid-area: amburguesa-uno;
+    align-items: flex-start;
+    padding: 20px;
+
+}
+
+.amburguesa-dos{
+    grid-area: amburguesa-dos;
+    align-items: flex-end;
+    padding: 20px;
+    
+
+}
+
+
+
+/* recetas fiestas patrias, subtitulo, ingredientes, preparacion */
+
+main h2{
+    font-size: 30px;
+}
+
+main h3{
+    
+    font-size: 25px;
+    font-family: 'Taviraj', serif;
+    
+}
+
+main ul { /* lista ingredientes*/
+
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+    font-family: 'Taviraj', serif;
+    border: 3px #FFB662 solid;
+    padding: 25px;
+    font-style: italic;
+}
+
+.pino{ /*imagen pino*/
+    padding: 10px;
+    width: 80%;
+    height: auto;
+}
+
+main ol { /* lista preparacion */
+
+    list-style: decimal;
+    font-family: 'Taviraj', serif;
+    padding: 30px;
+    margin-right: 5rem;
+
+
+}   
+    
+
+
+
+/* Vocabulario culinario y sobre nosotros*/
+
+.parrafo-tres{ 
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Taviraj', serif;
+    font-style: italic;
+   
+}
+
+
+.vocabulario{
+
+    list-style: circle;
+    font-family: 'Taviraj', serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 170px;
+    margin-right: 1320px;
+
+}
+
+
+
+/*pie de pagina*/
+
+footer{
+    
+    background-color: rgb(219, 203, 150);
+    width: 350px;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 50px ;
+    margin-left: 750px;
+    margin-right: 750px;
+    padding: 1px 1px 1px 1px;
+    border: 3px solid rosybrown;
+   
+}
+
+
+/* contactanos*/
+
+form fieldset{
+    border: 3px solid #FFB662;
+    margin-top: 60px;
+    margin-bottom: 50px ;
+    margin-left: 750px;
+    margin-right: 750px
+    
+    
+}
+
+form fieldset legend{
+
+    font-family: 'Taviraj', serif;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.formulario{
+
+    font-family: 'Taviraj', serif;
+    font-size: 30px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+input{
+    height: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mediaqueries*/
+
+@media screen and (max-width:768px){
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    
+    header h1 {
+        margin-bottom: 1rem;
+        font-family: 'Taviraj', serif;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+        font-size: 30px;
+    }
+    
+    header nav ul {
+        display: flex;
+        column-gap: 10px;
+        list-style: none;
+        padding: 10px;
+        font-family: 'Taviraj', serif;
+        font-weight: 300;
+    }
+
+
+    main{
+        gap: 8px;
+        height:600px;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"subtitulo"
+                            "subtitulo"
+                            "parrafo-uno" 
+                            "amburguesa-uno"
+                            "parrafo-dos"
+                            "amburguesa-dos";                             
+        font-family: 'Taviraj', serif;
+        text-align: justify;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+          
+    }
+    
+    .subtitulo{
+        grid-area: subtitulo;
+        font-size: 20px;
+    
+    }
+    
+    .parrafo-uno{
+        grid-area: parrafo-uno;
+        font-style: italic;
+        padding: 20px;
+       
+        
+    
+    }
+    
+    .parrafo-dos{
+        grid-area: parrafo-dos;
+        font-style: italic;
+        padding-right: 90px;
+    }
+    
+    .amburguesa-uno{
+        grid-area: amburguesa-uno;
+        align-items: flex-start;
+        padding: 20px;
+    
+    }
+    
+    .amburguesa-dos{
+        grid-area: amburguesa-dos;
+        align-items: flex-end;
+        padding: 20px;
+        
+    
+    }
+    
+    
+    
+    /* recetas fiestas patrias, subtitulo, ingredientes, preparacion */
+    
+    main h2{
+        font-size: 30px;
+    }
+    
+    main h3{
+        
+        font-size: 25px;
+        font-family: 'Taviraj', serif;
+        
+    }
+    
+    main ul { /* lista ingredientes*/
+
+        font-size: 22px;
+        list-style: circle;
+        font-family: 'Taviraj', serif;
+        border-width: 10px;
+        border-style: none;
+        padding: 85px;
+        font-style: italic;
+    }
+    
+    .pino{ /*imagen pino*/
+        padding: 10px;
+        width: 80%;
+        height: auto;
+    }
+    
+    main ol { /* lista preparacion */
+    
+        list-style: decimal;
+        font-family: 'Taviraj', serif;
+        padding: 30px;
+        margin-right: 5rem;
+        font-size: 20px;
+    
+    
+    }
+
+   
+    
+}
+
+
+
+

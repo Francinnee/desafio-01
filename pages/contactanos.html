@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
+
+    <title> Contactanos </title>
+</head>
+<body>
+   
+    <header> 
+        <h1> Contactanos </h1>
+        <nav> 
+            <ul>
+                <li> <a href="../index.html"> Inicio </a> </li>
+                <li>
+                     <a href="recetas-fiestas-patrias.html"> recetas fiestas patrias </a>
+                </li>
+                <li>
+                     <a href="vocabulario.html"> vocabulario culinario </a>
+                </li>
+                <li>
+                    <a href="sobre-nosotros.html"> sobre nosotros </a>
+                 </li>
+                <li>
+                     <a href="contactanos.html"> contactanos </a>
+                </li>
+                <li>
+                    <a href="#pie-de-pagina"> ir al footer</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form> 
+        <fieldset>
+        <legend> Formulario de contacto </legend>
+
+            <div class="formulario">
+
+                <label for="nombre">
+                    Completa tu nombre 
+                </label>
+
+                <input type="text" name="nombre"
+                id="nombre" placeholder="completa tu nombre" required>
+                
+            </div>
+
+            <div class="formulario">
+
+                <label for="email"> 
+                    Completa tu email
+                </label>
+
+                <input type="email" name="email" 
+                id="email" placeholder="completa tu email" required>
+
+            </div>
+
+            <div class="formulario"> 
+                
+                <label for="telefono">
+                    Completa tu telefono
+                </label>
+            
+            
+                 <input type="text" name="telefono"
+                 id="telefono" placeholder="completa tu telefono" required>
+
+            </div>
+
+            <div class="formulario">
+                
+                <label for="pais">
+                    Selecciona tu pais
+                </label>
+
+                <select name="pais" id="">
+                    <option value="Chile">
+                        Chile</option>
+                    <option value="Argentina">
+                        Argentina</option>
+                    <option value="Peru">
+                        Peru</option>
+                        <option value="Colombia">
+                            Colombia</option>
+                </select>
+            </div>
+
+            <div class="formulario"> 
+                <input type="text" name="text" id="text"
+                placeholder="mensaje">
+
+                <input type="submit" value="enviar">
+                <input type="reset" value="borrar">
+            </div>
+        </fieldset>
+    </form>
+
+    <footer id="pie-de-pagina">
+        <h2> Todos los derechos reservados </h2> 
+     </footer>
+
+</body>
+</html>
