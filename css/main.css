@@ -85,16 +85,40 @@ main{
     grid-area: amburguesa-uno;
     align-items: flex-start;
     padding: 20px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+    
+}
 
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .amburguesa-dos{
     grid-area: amburguesa-dos;
     align-items: flex-end;
     padding: 20px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
     
-
 }
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 
