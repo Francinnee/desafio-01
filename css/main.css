@@ -211,23 +211,8 @@ footer h2{
 
 /* contactanos*/
 
-form fieldset{
-    border: 3px solid #FFB662;
-    margin-top: 60px;
-    margin-bottom: 50px ;
-    margin-left: 750px;
-    margin-right: 750px
-    
-    
-}
 
-form fieldset legend{
 
-    font-family: 'Taviraj', serif;
-    font-size: 30px;
-    text-align: center;
-
-}
 
 .formulario{
 
