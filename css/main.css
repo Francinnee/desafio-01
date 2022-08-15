@@ -37,6 +37,11 @@ header nav ul {
     font-weight: 300;
 }
 
+/* color de nav*/
+
+.colornav{
+    background-color: #F9F2ED;
+}
 
 
 /*subtitulo y parrafos index*/
@@ -167,8 +172,8 @@ main ol { /* lista preparacion */
 /* Vocabulario culinario y sobre nosotros*/
 
 .parrafo-tres{ 
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,6 +206,8 @@ footer{
 footer h2{
     
     background-color: rgb(219, 203, 150);
+    font-family: 'Taviraj', serif;
+    font-size:20px;
     width: 350px;
     text-align: center;
     padding: 1px 1px 1px 1px;
